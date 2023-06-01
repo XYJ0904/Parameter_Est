@@ -29,12 +29,12 @@ def generate_para():
     opt.root_path_V = opt.root_path_T
     opt.root_path_Te = opt.root_path_T
     opt.root_path_R = opt.root_path_T
-    opt.mat_file_T = "Dataset_LHS_500000_0.3562_G_5000.mat"
+    opt.mat_file_T = "Dataset_LHS_5000.mat"
     opt.mat_file_V = opt.mat_file_T
     opt.mat_file_Te = opt.mat_file_T
     opt.mat_file_R = opt.mat_file_T
 
-    opt.para_weight_file = "./para_weight.csv"
+    opt.para_weight_file = "You Weight File" # in a shape of (80,)
     opt.para_weight = np.loadtxt(opt.para_weight_file, delimiter=",", dtype="float")
     opt.para_weight_1 = opt.para_weight[0:40].reshape(40, 1)
     opt.para_weight_2 = opt.para_weight[40:].reshape(40, 1)
